@@ -183,12 +183,7 @@
     .bg-soft { background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); }
     .section-intro { max-width: 980px; margin: 0 auto 24px; text-align: center; color: #64748b; font-size: 16px; }
     .about-grid, .project-grid, .skill-grid, .award-grid, .education-grid, .cert-grid { display: grid; gap: 18px; }
-    .about-grid{
-  display: grid;
-  grid-template-columns: 1.15fr 1fr 1fr;
-  gap: 18px;
-  align-items: stretch;
-}
+    .about-grid { grid-template-columns: 1.1fr 0.9fr; }
     .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .award-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -199,16 +194,7 @@
     .compact-list { margin: 0; padding-left: 18px; }
     .compact-list li { margin-bottom: 8px; }
     .metric-list { display: grid; gap: 12px; margin: 14px 0 0; }
-    .focus-grid{
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
-  margin-top: 8px;
-}
-
-.about-card{ height: 100%; }
-.focus-card{ height: 100%; }
-.about-grid > .about-card{ min-width: 0; }
+    .focus-grid { display: grid; gap: 14px; margin-top: 8px; }
     .focus-card {
       padding: 16px 16px 15px;
       border-radius: 18px;
@@ -259,67 +245,6 @@
     #lead-overlay { background: transparent; }
     #lead-down { z-index: 3; }
 
-
-    /* Premium hover glow + gradient borders */
-    .stat-card, .project-card, .skill-card, .award-card, .education-card, .about-card, .cert-card, .experience-card, .focus-card {
-      position: relative;
-      isolation: isolate;
-      border: 1px solid rgba(148, 163, 184, 0.18);
-    }
-    .stat-card::before, .project-card::before, .skill-card::before, .award-card::before, .education-card::before, .about-card::before, .cert-card::before, .experience-card::before, .focus-card::before {
-      content: '';
-      position: absolute;
-      inset: -1px;
-      border-radius: inherit;
-      padding: 1px;
-      background: linear-gradient(135deg, rgba(59,130,246,0.55), rgba(14,165,233,0.18), rgba(255,255,255,0.06));
-      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-      -webkit-mask-composite: xor;
-      mask-composite: exclude;
-      opacity: 0;
-      transition: opacity .25s ease;
-      pointer-events: none;
-      z-index: -1;
-    }
-    .stat-card:hover::before, .project-card:hover::before, .skill-card:hover::before, .award-card:hover::before, .education-card:hover::before, .about-card:hover::before, .cert-card:hover::before, .experience-card:hover::before, .focus-card:hover::before {
-      opacity: 1;
-    }
-    .stat-card:hover, .project-card:hover, .skill-card:hover, .award-card:hover, .education-card:hover, .about-card:hover, .cert-card:hover, .experience-card:hover, .focus-card:hover {
-      box-shadow: 0 18px 50px rgba(37, 99, 235, 0.18), 0 18px 50px rgba(15, 23, 42, 0.10);
-      transform: translateY(-6px) scale(1.01);
-    }
-
-    .btn-rounded-white {
-      transition: transform .2s ease, box-shadow .2s ease, background-color .2s ease, color .2s ease;
-    }
-    .btn-rounded-white:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 14px 32px rgba(15,23,42,0.22);
-    }
-
-    /* Scroll reveal */
-    .reveal {
-      opacity: 0;
-      transform: translateY(18px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* Subtle section shimmer */
-    .section-intro::after {
-      content: '';
-      display: block;
-      width: 72px;
-      height: 2px;
-      margin: 14px auto 0;
-      border-radius: 999px;
-      background: linear-gradient(90deg, transparent, #f59e0b, transparent);
-      opacity: .9;
-    }
-
     @media (max-width: 991px) {
       .hero-stats, .about-grid, .project-grid, .skill-grid, .award-grid, .education-grid, .cert-grid { grid-template-columns: 1fr 1fr; }
     }
@@ -350,23 +275,23 @@
 
   <div id="lead">
     <div id="lead-content" class="fade-up">
-      <div class="hero-kicker reveal">Open to DevOps Engineering roles</div>
+      <div class="hero-kicker">Open to DevOps Engineering roles</div>
       <h1>Balkrishna Londhe</h1>
       <h2><b>Senior DevOps & Cloud Engineer</b></h2>
-      <p class="hero-subtitle reveal">AWS | Kubernetes and EKS | Terraform | CI/CD Automation | Platform Engineering | 8 YOE | Ex-IBM</p>
-      <div class="hero-actions reveal">
+      <p class="hero-subtitle">AWS | Kubernetes and EKS | Terraform | CI/CD Automation | Platform Engineering | 8 YOE | Ex-IBM</p>
+      <div class="hero-actions">
         <a href="Balkrishna Londhe DevOps Engineer.pdf" class="btn-rounded-white">Download Resume</a>
         <a href="mailto:londhebalkrishna@gmail.com?subject=DevOps%20Opportunity" class="btn-rounded-white">Contact Me</a>
         <a href="#projects" class="btn-rounded-white">View Projects</a>
       </div>
-      <ul class="hero-badges reveal">
+      <ul class="hero-badges">
         <li><i class="fa fa-cloud"></i>AWS</li>
         <li><i class="fa fa-cubes"></i>Kubernetes</li>
         <li><i class="fa fa-code-fork"></i>CI/CD</li>
         <li><i class="fa fa-cogs"></i>Terraform</li>
         <li><i class="fa fa-line-chart"></i>Observability</li>
       </ul>
-      <div class="hero-stats reveal">
+      <div class="hero-stats">
         <div class="stat-card fade-up delay-1"><span class="num counter" data-target="8" data-suffix="" data-decimals="0">0</span><span class="label">Years Experience</span></div>
         <div class="stat-card fade-up delay-2"><span class="num counter" data-target="70" data-suffix="%" data-decimals="0">0%</span><span class="label">Faster Deployments</span></div>
         <div class="stat-card fade-up delay-3"><span class="num counter" data-target="50" data-suffix="+" data-decimals="0">0+</span><span class="label">VMs Monitored</span></div>
@@ -380,13 +305,13 @@
   <div id="about" class="bg-soft">
     <div class="container">
       <div class="row">
+        <div class="col-md-4">
+          <h2 class="heading"><b>About Me</b></h2>
+          <p class="subtle">I am a Senior DevOps and Cloud Engineer with 8 years of hands-on experience designing, automating, and optimizing cloud infrastructure across AWS and IBM Cloud environments.My core expertise lies in Kubernetes (EKS), Infrastructure as Code (Terraform), and CI/CD automation, where I focus on building scalable, reliable, and production-ready systems. I have worked extensively on enabling teams to deliver software faster by streamlining deployment pipelines, reducing manual effort, and improving system observability. Over the years, I have designed and managed microservices-based architectures, implemented zero-downtime deployment strategies, and built monitoring platforms using Prometheus, Grafana, and CloudWatch. I actively work on improving infrastructure performance, ensuring high availability, and maintaining secure cloud environments aligned with best practices. I enjoy solving complex infrastructure challenges, optimizing cloud environments, and building systems that scale efficiently. My approach focuses on automation, reliability, and continuous improvement to deliver high-impact engineering solutions.</p>
+        </div>
         <div class="col-md-8">
           <div class="about-grid">
-            <div class="about-card fade-up reveal">
-              <h3 class="card-title"><i class="fa fa-user"></i>About Me</h3>
-              <p class="subtle">I am a Senior DevOps and Cloud Engineer with 8 years of hands-on experience designing, automating, and optimizing cloud infrastructure across AWS and IBM Cloud environments.My core expertise lies in Kubernetes (EKS), Infrastructure as Code (Terraform), and CI/CD automation, where I focus on building scalable, reliable, and production-ready systems. I have worked extensively on enabling teams to deliver software faster by streamlining deployment pipelines, reducing manual effort, and improving system observability. Over the years, I have designed and managed microservices-based architectures, implemented zero-downtime deployment strategies, and built monitoring platforms using Prometheus, Grafana, and CloudWatch. I actively work on improving infrastructure performance, ensuring high availability, and maintaining secure cloud environments aligned with best practices. I enjoy solving complex infrastructure challenges, optimizing cloud environments, and building systems that scale efficiently. My approach focuses on automation, reliability, and continuous improvement to deliver high-impact engineering solutions.</p>
-          </div>
-            <div class="about-card fade-up-1">
+            <div class="about-card fade-up">
               <h3 class="card-title"><i class="fa fa-user"></i>Professional Summary</h3>
               <p>Senior DevOps and Cloud Engineer with 8 years of experience building and operating scalable cloud platforms across AWS and IBM Cloud. I focus on infrastructure automation, release engineering, Kubernetes operations, and observability, with a consistent track record of improving deployment speed, reliability, and cost efficiency.</p>
               <div class="metric-list">
@@ -396,31 +321,35 @@
                 <div class="metric-item"> <i class="fa fa-check-circle"></i><span><strong>Reliability:</strong> improved system stability with ~40% fewer incidents</span></div>
               </div>
             </div>
-            <div class="about-card fade-up delay-2 reveal">
+            <div class="about-card fade-up delay-1">
               <h3 class="card-title"><i class="fa fa-rocket"></i>Core Focus Areas</h3>
-<p class="subtle">A concise view of the platforms, delivery systems, and operational practices I build and improve.</p>
-
-<div class="focus-grid">
-  <div class="focus-card">
-    <div class="focus-head"><i class="fa fa-cloud"></i>Cloud Platform Engineering</div>
-    <p>AWS, EKS, Lambda, S3, RDS, IAM, and CloudFormation for resilient, scalable, production-ready environments.</p>
-  </div>
-
-  <div class="focus-card">
-    <div class="focus-head"><i class="fa fa-code-fork"></i>Delivery Automation</div>
-    <p>Jenkins, GitHub Actions, GitLab CI, and IBM UCD for reliable pipelines, faster releases, and reduced manual effort.</p>
-  </div>
-
-  <div class="focus-card">
-    <div class="focus-head"><i class="fa fa-bar-chart"></i>Observability & Reliability</div>
-    <p>Prometheus, Grafana, CloudWatch, ELK, and Splunk for actionable monitoring, alerting, and faster incident response.</p>
-  </div>
-
-  <div class="focus-card">
-    <div class="focus-head"><i class="fa fa-cubes"></i>Runtime & Deployment</div>
-    <p>Terraform, Docker, Helm, Istio, API Gateway, and Step Functions to standardize deployment and improve platform consistency.</p>
-  </div>
-</div></div>
+              <p class="subtle">A concise view of the platforms, delivery systems, and operational practices I build and improve.</p>
+              <div class="focus-grid">
+                <div class="focus-card">
+                  <div class="focus-head"><i class="fa fa-cloud"></i>Cloud Platform Engineering</div>
+                  <p>AWS, EKS, Lambda, S3, RDS, IAM, and CloudFormation for resilient, scalable, production-ready environments.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-head"><i class="fa fa-code-fork"></i>Delivery Automation</div>
+                  <p>Jenkins, GitHub Actions, GitLab CI, and IBM UCD for reliable pipelines, faster releases, and reduced manual effort.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-head"><i class="fa fa-bar-chart"></i>Observability & Reliability</div>
+                  <p>Prometheus, Grafana, CloudWatch, ELK, and Splunk for actionable monitoring, alerting, and faster incident response.</p>
+                </div>
+                <div class="focus-card">
+                  <div class="focus-head"><i class="fa fa-cubes"></i>Runtime & Deployment</div>
+                  <p>Terraform, Docker, Helm, Istio, API Gateway, and Step Functions to standardize deployment and improve platform consistency.</p>
+                </div>
+              </div>
+              <div class="focus-tag-row">
+                <span class="mini-tag">Platform Engineering</span>
+                <span class="mini-tag">DevOps</span>
+                <span class="mini-tag">Cloud Automation</span>
+                <span class="mini-tag">Observability</span>
+                <span class="mini-tag">Release Engineering</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -432,7 +361,7 @@
       <h2 class="heading"><b>Experience</b></h2>
       <p class="section-intro">A cleaner, senior-level story with clear ownership, scale, and measurable impact.</p>
 
-      <div class="experience-card fade-up reveal">
+      <div class="experience-card fade-up">
         <div class="experience-header">
           <div>
             <h3>LTM</h3>
@@ -487,7 +416,7 @@
         </div>
       </div>
 
-      <div class="experience-card fade-up delay-1 reveal">
+      <div class="experience-card fade-up delay-1">
         <div class="experience-header">
           <div>
             <h3>IBM India Private Limited</h3>
@@ -516,7 +445,7 @@
       <h2 class="heading"><b>Key Projects</b></h2>
       <p class="section-intro">These are the strongest stories to show architecture thinking, automation, and business impact.</p>
       <div class="project-grid">
-        <div class="project-card fade-up reveal">
+        <div class="project-card fade-up">
           <div class="project-meta"><div class="project-icon"><i class="fa fa-refresh"></i></div><span class="date-pill">CI/CD</span></div>
           <h3>Enterprise CI/CD Transformation</h3>
           <p>Designed and implemented end-to-end delivery pipelines that reduced release friction and improved deployment speed.</p>
@@ -526,7 +455,7 @@
             <li>Improved rollback readiness and release confidence through standardized automation.</li>
           </ul>
         </div>
-        <div class="project-card fade-up delay-1 reveal">
+        <div class="project-card fade-up delay-1">
           <div class="project-meta"><div class="project-icon"><i class="fa fa-cubes"></i></div><span class="date-pill">Kubernetes</span></div>
           <h3>Kubernetes Platform Engineering</h3>
           <p>Built and managed Kubernetes environments for scalable microservices deployment.</p>
@@ -536,7 +465,7 @@
             <li>Improved application scalability, resilience, and operational consistency.</li>
           </ul>
         </div>
-        <div class="project-card fade-up delay-2 reveal">
+        <div class="project-card fade-up delay-2">
           <div class="project-meta"><div class="project-icon"><i class="fa fa-code"></i></div><span class="date-pill">IaC</span></div>
           <h3>Terraform & CloudFormation Automation</h3>
           <p>Automated cloud provisioning to remove repetitive manual work and reduce environment drift.</p>
@@ -546,7 +475,7 @@
             <li>Added CloudFormation and EventBridge automation for repeatable infrastructure workflows.</li>
           </ul>
         </div>
-        <div class="project-card fade-up delay-3 reveal">
+        <div class="project-card fade-up delay-3">
           <div class="project-meta"><div class="project-icon"><i class="fa fa-bar-chart"></i></div><span class="date-pill">Observability</span></div>
           <h3>Monitoring & Reliability Platform</h3>
           <p>Enhanced observability across infrastructure and applications to reduce incident response time.</p>
@@ -565,19 +494,19 @@
       <h2 class="heading"><b>Skills</b></h2>
       <p class="section-intro">A recruiter-friendly skill set aligned to DevOps, platform engineering, and cloud automation roles.</p>
       <div class="skill-grid">
-        <div class="skill-card fade-up reveal">
+        <div class="skill-card fade-up">
           <h3 class="card-title"><i class="fa fa-cloud"></i>Cloud & IaC</h3>
           <div class="skill-tags">
             <span class="skill-tag">AWS</span><span class="skill-tag">EKS</span><span class="skill-tag">CloudFormation</span><span class="skill-tag">Terraform</span><span class="skill-tag">IAM</span><span class="skill-tag">S3</span><span class="skill-tag">Lambda</span>
           </div>
         </div>
-        <div class="skill-card fade-up delay-1 reveal">
+        <div class="skill-card fade-up delay-1">
           <h3 class="card-title"><i class="fa fa-code-fork"></i>CI/CD & Release</h3>
           <div class="skill-tags">
             <span class="skill-tag">Jenkins</span><span class="skill-tag">GitHub Actions</span><span class="skill-tag">GitLab CI</span><span class="skill-tag">IBM UCD</span><span class="skill-tag">Git</span><span class="skill-tag">Helm</span><span class="skill-tag">Bash</span>
           </div>
         </div>
-        <div class="skill-card fade-up delay-2 reveal">
+        <div class="skill-card fade-up delay-2">
           <h3 class="card-title"><i class="fa fa-line-chart"></i>Monitoring & Runtime</h3>
           <div class="skill-tags">
             <span class="skill-tag">Prometheus</span><span class="skill-tag">Grafana</span><span class="skill-tag">CloudWatch</span><span class="skill-tag">ELK</span><span class="skill-tag">Splunk</span><span class="skill-tag">AppDynamics</span><span class="skill-tag">Istio</span>
@@ -592,7 +521,7 @@
       <h2 class="heading"><b>Certifications and Key Courses</b></h2>
       <p class="section-intro">The broader learning path that supports your cloud, DevOps, and platform engineering profile.</p>
       <div class="cert-grid">
-        <div class="cert-card fade-up reveal">
+        <div class="cert-card fade-up">
           <h3 class="card-title"><i class="fa fa-certificate"></i>DevOps & Cloud Certifications</h3>
           <ul class="compact-list cert-links">
             <li><a href="https://raw.githubusercontent.com/BalkrishnaBK/BalkrishnaBK.github.io/master/images/Certificates/AWS%20Certified%20Cloud%20Practitioner%20certificate.jpg" target="_blank" rel="noopener noreferrer">AWS Certified Cloud Practitioner</a></li>
@@ -616,7 +545,7 @@
             <li><a href="https://raw.githubusercontent.com/BalkrishnaBK/BalkrishnaBK.github.io/master/images/Certificates/Cognitive_Practitioner.jpg" target="_blank" rel="noopener noreferrer">Cognitive Practitioner</a></li>
           </ul>
         </div>
-        <div class="cert-card fade-up delay-1 reveal">
+        <div class="cert-card fade-up delay-1">
           <h3 class="card-title"><i class="fa fa-book"></i>Additional Learning</h3>
           <ul class="compact-list">
             <li>Java Certification from KTI</li>
@@ -636,42 +565,42 @@
     <div class="container">
       <h2 class="heading"><b>Honors & Awards</b></h2>
       <div class="award-grid">
-        <div class="award-card fade-up reveal">
+        <div class="award-card fade-up">
           <h3><i class="fa fa-star"></i>Star Awards - Shooting Star Q2FY25</h3>
           <p class="subtle">October 2024</p>
           <p>Hi Balkrishna<br>Congratulation on winning Shooting Star (Team Contributor)!<br>We applaud you for your outstanding achievement.<br>Thank you for your exemplary contributions. Keep up the great work!!</p>
         </div>
-        <div class="award-card fade-up delay-1 reveal">
+        <div class="award-card fade-up delay-1">
           <h3><i class="fa fa-trophy"></i>Eminence &amp; Excellence Award</h3>
           <p class="subtle">June 2021</p>
           <p>Hi Balkrishna You have been leading DevOps activities very well for OB team from Iteration 0 &amp; you playing a very critical role.<br>You have extended working over several weekends ensuring a successful deployments for critical Testing phases.<br>Appreciate your contributions and Keep up the good work !!</p>
         </div>
-        <div class="award-card fade-up delay-2 reveal">
+        <div class="award-card fade-up delay-2">
           <h3><i class="fa fa-thumbs-up"></i>Appreciation by Sector Lead</h3>
           <p class="subtle">October 2020</p>
           <p>Thank you very much for your role and leadership as the DevOps expert on the Bendigo account.<br>Your contribution is very well recognized.</p>
         </div>
-        <div class="award-card fade-up delay-3 reveal">
+        <div class="award-card fade-up delay-3">
           <h3><i class="fa fa-star-half-o"></i>BEN's SUPERSTAR</h3>
           <p class="subtle">August 2020</p>
           <p>Balkrishna ..Your are a BEN's SUPERSTAR ... Here is a small token of appreciation for all your contribution on Bendigo...<br>You have been leading DevOps activites for OB team from Iteration 0. During migration to Interim AWS, you played a very critical role and extended working over several weekends ensuring a successful migration.<br>The same was often appreciated by Geo team.</p>
         </div>
-        <div class="award-card fade-up delay-4 reveal">
+        <div class="award-card fade-up delay-4">
           <h3><i class="fa fa-check-circle"></i>Manager's Choice Award</h3>
           <p class="subtle">November 2019</p>
           <p>Thanks for all the hard work that you are doing for Aus CDS asset development.<br>You are adding great value to the project. Keep it up.</p>
         </div>
-        <div class="award-card fade-up reveal">
+        <div class="award-card fade-up">
           <h3><i class="fa fa-check"></i>Manager's Choice Award (Restlessly reinvent)</h3>
           <p class="subtle">April 2019</p>
           <p>We really appreciate all of your hard work and effort.<br>There is much more to achieve in the coming months and we are looking forward to very active participation from you.<br>You did a wonderful job!!! Keep it up.</p>
         </div>
-        <div class="award-card fade-up delay-1 reveal">
+        <div class="award-card fade-up delay-1">
           <h3><i class="fa fa-graduation-cap"></i>IBM Champion Learner Gold 2020</h3>
           <p class="subtle">2020</p>
           <p>Completed 200+ learning hours and three certificates/badges.</p>
         </div>
-        <div class="award-card fade-up delay-2 reveal">
+        <div class="award-card fade-up delay-2">
           <h3><i class="fa fa-graduation-cap"></i>IBM Champion Learner Gold 2021</h3>
           <p class="subtle">2021</p>
           <p>Completed 200+ learning hours and three certificates/badges.</p>
@@ -684,12 +613,12 @@
     <div class="container">
       <h2 class="heading"><b>Education</b></h2>
       <div class="education-grid">
-        <div class="education-card fade-up reveal">
+        <div class="education-card fade-up">
           <h3>Bachelor of Engineering - Computer Engineering</h3>
           <p class="subtle">Savitribai Phule Pune University | 2013 - 2017</p>
           <p>Graduated with First Class with Distinction.</p>
         </div>
-        <div class="education-card fade-up delay-1 reveal">
+        <div class="education-card fade-up delay-1">
           <h3>Secondary Education</h3>
           <p class="subtle">HSC Science and SSC | Maharashtra State Board</p>
           <p>Kept intentionally compact so your professional experience stays the focus.</p>
@@ -702,12 +631,12 @@
     <div class="container">
       <h2 class="heading"><b>Publications</b></h2>
       <div class="education-grid">
-        <div class="education-card fade-up reveal">
+        <div class="education-card fade-up">
           <h3>Transportation Portal</h3>
           <p class="subtle">2017 | International Journal of Interdisciplinary Innovative Research and Development</p>
           <p>Co-authored project publication focused on a centralized transportation management portal.</p>
         </div>
-        <div class="education-card fade-up delay-1 reveal">
+        <div class="education-card fade-up delay-1">
           <h3>Survey on Transportation Portal</h3>
           <p class="subtle">2016 | International Journal of Innovative Research in Computer and Communication Engineering</p>
           <p>Research article that supported the foundation of the transportation portal project.</p>
@@ -740,7 +669,6 @@
     document.addEventListener('DOMContentLoaded', function () {
       const counters = document.querySelectorAll('.counter');
       const duration = 1500;
-
       counters.forEach((counter) => {
         const raw = (counter.dataset.target || '0').trim();
         const suffix = counter.dataset.suffix || '';
@@ -757,18 +685,6 @@
         };
         requestAnimationFrame(tick);
       });
-
-      const revealEls = document.querySelectorAll('.reveal');
-      const observer = new IntersectionObserver((entries, obs) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            obs.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.12 });
-
-      revealEls.forEach((el) => observer.observe(el));
     });
   </script>
   <script src="js/scripts.min.js"></script>
