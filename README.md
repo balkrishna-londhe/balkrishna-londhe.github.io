@@ -1,3 +1,5 @@
+<h1 align="center">Hi 👋, I'm Balkrishna Londhe</h1>
+
 # 🚀 Balkrishna Londhe – DevOps Portfolio
 
 This repository contains my **personal portfolio website**, showcasing my experience, projects, and expertise as a **Senior DevOps & Cloud Engineer with 8 years of experience**.
@@ -30,24 +32,29 @@ I focus on improving **deployment speed, reliability, and cost efficiency** thro
 
 ---
 
-## 🧱 Tech Stack
+## 🧰 Tech Stack
 
 ### ☁️ Cloud & Infrastructure
-- AWS (EC2, EKS, Lambda, S3, RDS, IAM)
-- Terraform, CloudFormation
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform)
+![CloudFormation](https://img.shields.io/badge/CloudFormation-FF9900?style=for-the-badge&logo=amazonaws)
+
+### ☸️ Containers & Orchestration
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker)
+![Helm](https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm)
+![Istio](https://img.shields.io/badge/Istio-466BB0?style=for-the-badge&logo=istio)
 
 ### 🔄 CI/CD & Automation
-- Jenkins, GitHub Actions, GitLab CI
-- IBM UrbanCode Deploy
-- Bash, Git
-
-### 📦 Containers & Orchestration
-- Docker, Kubernetes (EKS)
-- Helm, Istio
+![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions)
+![GitLab](https://img.shields.io/badge/GitLab-FC6D26?style=for-the-badge&logo=gitlab)
 
 ### 📊 Monitoring & Observability
-- Prometheus, Grafana, CloudWatch
-- ELK Stack, Splunk, AppDynamics
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana)
+![ELK](https://img.shields.io/badge/ELK-005571?style=for-the-badge&logo=elastic)
+![Splunk](https://img.shields.io/badge/Splunk-000000?style=for-the-badge&logo=splunk)
 
 ---
 
@@ -155,7 +162,25 @@ To deploy:
 
 ---
 
-## 📄 License
-Completely free (MIT)! See [LICENSE.md](LICENSE.md) for more.
+## 📈 GitHub Stats
 
-MIT License
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=BalkrishnaBK&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BalkrishnaBK&theme=tokyonight" />
+</p>
+
+---
+
+## 🌐 Connect With Me
+
+<p align="center">
+  <a href="https://www.linkedin.com/in/balkrishna-londhe"><img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin"></a>
+  <a href="mailto:londhebalkrishna@gmail.com"><img src="https://img.shields.io/badge/Email-red?style=for-the-badge&logo=gmail"></a>
+</p>
+
+---
+
+⭐️ From [Balkrishna Londhe](https://github.com/BalkrishnaBK)
+
+## 📄 License
+
