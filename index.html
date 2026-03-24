@@ -47,8 +47,13 @@
       top: auto !important;
       transform: none !important;
       width: min(1180px, 94vw);
+      max-width: 1180px;
       margin: 0 auto;
       text-align: center !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       padding: 48px 36px 38px;
       border-radius: 34px;
       background: rgba(255,255,255,0.12);
@@ -61,12 +66,16 @@
       color: #fff;
       font-size: clamp(2.8rem, 7vw, 5.8rem);
       line-height: 0.92;
-      margin-bottom: 8px;
+      margin: 0 auto 8px;
+      text-align: center;
+      width: 100%;
     }
     #lead-content h2 {
       color: rgba(255,255,255,0.92);
       font-size: clamp(1.1rem, 2.8vw, 1.95rem);
-      margin-top: 0;
+      margin: 0 auto;
+      text-align: center;
+      width: 100%;
     }
     .hero-kicker {
       display: inline-flex;
@@ -87,13 +96,15 @@
       font-size: 16px;
       max-width: 980px;
       margin: 8px auto 0;
+      text-align: center;
     }
     .hero-actions {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 12px;
-      margin: 22px 0 0;
+      margin: 22px auto 0;
+      width: 100%;
     }
     #lead-content .btn-rounded-white {
       display: inline-flex;
@@ -116,6 +127,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 10px;
+      width: 100%;
     }
     .hero-badges li, .mini-tag {
       display: inline-flex;
@@ -134,7 +146,7 @@
       display: grid;
       grid-template-columns: repeat(4, minmax(0, 1fr));
       gap: 14px;
-      max-width: 920px;
+      width: min(920px, 100%);
       margin-left: auto;
       margin-right: auto;
     }
@@ -176,7 +188,7 @@
     .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .award-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .education-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .cert-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .cert-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .card-title { margin: 0 0 10px; font-size: 20px; font-weight: 900; color: #0f172a; }
     .card-title i { margin-right: 8px; color: #3498db; }
     .compact-list { margin: 0; padding-left: 18px; }
@@ -186,6 +198,8 @@
     .metric-item i { color: #3498db; margin-top: 3px; }
     .metric-item strong { color: #0f172a; }
     .timeline-note { margin: 8px 0 12px; color: #475569; font-size: 15px; }
+    #experience .experience-card, #experience .sub-project-block, #experience .compact-list, #experience .timeline-note { text-align: left; }
+    #experience .compact-list { padding-left: 20px; }
     .subtle { color: #64748b; margin-bottom: 10px; }
     .experience-card { margin-bottom: 24px; }
     .experience-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 18px; margin-bottom: 18px; flex-wrap: wrap; }
@@ -242,10 +256,10 @@
 
   <div id="lead">
     <div id="lead-content" class="fade-up">
-      <div class="hero-kicker">Open to DevOps / Platform Engineering roles</div>
+      <div class="hero-kicker">Open to DevOps Engineering roles</div>
       <h1>Balkrishna Londhe</h1>
       <h2><b>Senior DevOps & Cloud Engineer</b></h2>
-      <p class="hero-subtitle">AWS | Kubernetes (EKS) | Terraform | CI/CD Automation | Platform Engineering | 8 YOE | Ex-IBM</p>
+      <p class="hero-subtitle">AWS | Kubernetes and EKS | Terraform | CI/CD Automation | Platform Engineering | 8 YOE | Ex-IBM</p>
       <div class="hero-actions">
         <a href="Balkrishna Londhe DevOps Engineer.pdf" class="btn-rounded-white">Download Resume</a>
         <a href="mailto:londhebalkrishna@gmail.com?subject=DevOps%20Opportunity" class="btn-rounded-white">Contact Me</a>
@@ -317,17 +331,17 @@
       <div class="experience-card fade-up">
         <div class="experience-header">
           <div>
-            <h3>LTIMindtree</h3>
+            <h3>LTM</h3>
             <h4>Senior DevOps & Cloud Delivery</h4>
           </div>
           <div class="date-pill">Dec 2021 - Present</div>
         </div>
-        <p class="timeline-note">Two major delivery tracks within LTIMindtree: ZS and Republic.</p>
+        <p class="timeline-note">Two delivery tracks within LTM.</p>
 
         <div class="sub-project-block">
           <div class="sub-project-header">
             <div>
-              <h3 style="margin:0;font-size:22px;font-weight:900;">ZS</h3>
+              <h3 style="margin:0;font-size:22px;font-weight:900;">Specialist - Cloud Engineering (DevOps Engineer)</h3>
               <h4 style="margin:4px 0 0;font-size:16px;color:#64748b;font-weight:700;">Specialist - Cloud Engineering (DevOps Engineer)</h4>
             </div>
             <div class="date-pill">Jan 2026 - Present</div>
@@ -349,8 +363,8 @@
         <div class="sub-project-block">
           <div class="sub-project-header">
             <div>
-              <h3 style="margin:0;font-size:22px;font-weight:900;">Republic</h3>
-              <h4 style="margin:4px 0 0;font-size:16px;color:#64748b;font-weight:700;">Senior Cloud - DevOps Engineer</h4>
+              <h3 style="margin:0;font-size:22px;font-weight:900;">Senior Cloud - DevOps Engineer</h3>
+              <h4 style="margin:4px 0 0;font-size:16px;color:#64748b;font-weight:700;">AWS infrastructure, CI/CD, and observability</h4>
             </div>
             <div class="date-pill">Dec 2021 - Jan 2026</div>
           </div>
@@ -507,19 +521,10 @@
             <li>MS-CIT</li>
             <li>C Language</li>
             <li>C++ Language</li>
+            <li>Selected portfolio credentials available on request</li>
           </ul>
         </div>
-        <div class="cert-card fade-up delay-2">
-          <h3 class="card-title"><i class="fa fa-star"></i>Selected Portfolio Credentials</h3>
-          <ul class="compact-list">
-            <li>Building Cloud-Native and Multicloud Applications</li>
-            <li>Operating Kubernetes on IBM Cloud</li>
-            <li>Docker Essentials: A Developer Introduction</li>
-            <li>DevSecOps Essentials</li>
-            <li>Credly profile available for verification</li>
-          </ul>
-        </div>
-      </div>
+              </div>
     </div>
   </div>
 
