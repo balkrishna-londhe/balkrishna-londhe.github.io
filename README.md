@@ -184,3 +184,8 @@ To deploy:
 
 ## 📄 License
 
+This project is licensed under the MIT License.
+
+This portfolio is based on an open-source template originally created by Ryan Fitzgerald and has been significantly customized.
+
+See the [LICENSE](LICENSE.md) file for details.
