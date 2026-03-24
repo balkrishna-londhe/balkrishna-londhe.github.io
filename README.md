@@ -1,5 +1,9 @@
-<h1 align="center"># 🚀 Balkrishna Londhe – DevOps Portfolio</h1>
-[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]
+<h1 align="center">🚀 Balkrishna Londhe – DevOps Portfolio</h1>
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-blue?style=for-the-badge&logo=google-chrome)](https://balkrishnabk.github.io/)
+[![GitHub stars](https://img.shields.io/github/stars/BalkrishnaBK/BalkrishnaBK.github.io?style=for-the-badge)](https://github.com/BalkrishnaBK/BalkrishnaBK.github.io)
+[![Profile Views](https://komarev.com/ghpvc/?username=BalkrishnaBK&style=for-the-badge&color=blue)](https://github.com/BalkrishnaBK)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 This repository contains my **personal portfolio website**, showcasing my experience, projects, and expertise as a **Senior DevOps & Cloud Engineer with 8 years of experience**.
 
