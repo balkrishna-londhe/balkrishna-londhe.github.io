@@ -1,5 +1,5 @@
 <h1 align="center"># 🚀 Balkrishna Londhe – DevOps Portfolio</h1>
-![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)]
 
 This repository contains my **personal portfolio website**, showcasing my experience, projects, and expertise as a **Senior DevOps & Cloud Engineer with 8 years of experience**.
 
