@@ -1,6 +1,5 @@
-<h1 align="center">Hi 👋, I'm Balkrishna Londhe</h1>
-
-# 🚀 Balkrishna Londhe – DevOps Portfolio
+<h1 align="center"># 🚀 Balkrishna Londhe – DevOps Portfolio</h1>
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 This repository contains my **personal portfolio website**, showcasing my experience, projects, and expertise as a **Senior DevOps & Cloud Engineer with 8 years of experience**.
 
@@ -165,8 +164,8 @@ To deploy:
 ## 📈 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=BalkrishnaBK&show_icons=true&theme=tokyonight" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=BalkrishnaBK&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api?username=balkrishna-londhe&show_icons=true&theme=tokyonight" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=balkrishna-londhe&theme=tokyonight" />
 </p>
 
 ---
@@ -180,7 +179,7 @@ To deploy:
 
 ---
 
-⭐️ From [Balkrishna Londhe](https://github.com/BalkrishnaBK)
+⭐️ From [Balkrishna Londhe](https://github.com/balkrishna-londhe)
 
 ## 📄 License
 
