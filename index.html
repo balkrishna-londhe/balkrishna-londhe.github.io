@@ -183,7 +183,7 @@
     .bg-soft { background: linear-gradient(180deg, #f8fbff 0%, #ffffff 100%); }
     .section-intro { max-width: 980px; margin: 0 auto 24px; text-align: center; color: #64748b; font-size: 16px; }
     .about-grid, .project-grid, .skill-grid, .award-grid, .education-grid, .cert-grid { display: grid; gap: 18px; }
-    .about-grid { grid-template-columns: 1.1fr 0.9fr; }
+    .about-grid {display: grid;grid-template-columns: repeat(3, 1fr);gap: 18px;}
     .project-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .skill-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
     .award-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
@@ -311,7 +311,7 @@
               <h3 class="card-title"><i class="fa fa-user"></i>About Me</h3>
               <p class="subtle">I am a Senior DevOps and Cloud Engineer with 8 years of hands-on experience designing, automating, and optimizing cloud infrastructure across AWS and IBM Cloud environments.My core expertise lies in Kubernetes (EKS), Infrastructure as Code (Terraform), and CI/CD automation, where I focus on building scalable, reliable, and production-ready systems. I have worked extensively on enabling teams to deliver software faster by streamlining deployment pipelines, reducing manual effort, and improving system observability. Over the years, I have designed and managed microservices-based architectures, implemented zero-downtime deployment strategies, and built monitoring platforms using Prometheus, Grafana, and CloudWatch. I actively work on improving infrastructure performance, ensuring high availability, and maintaining secure cloud environments aligned with best practices. I enjoy solving complex infrastructure challenges, optimizing cloud environments, and building systems that scale efficiently. My approach focuses on automation, reliability, and continuous improvement to deliver high-impact engineering solutions.</p>
           </div>
-            <div class="about-card fade-up-1">
+            <div class="about-card fade-up  delay-1">
               <h3 class="card-title"><i class="fa fa-user"></i>Professional Summary</h3>
               <p>Senior DevOps and Cloud Engineer with 8 years of experience building and operating scalable cloud platforms across AWS and IBM Cloud. I focus on infrastructure automation, release engineering, Kubernetes operations, and observability, with a consistent track record of improving deployment speed, reliability, and cost efficiency.</p>
               <div class="metric-list">
@@ -321,7 +321,7 @@
                 <div class="metric-item"> <i class="fa fa-check-circle"></i><span><strong>Reliability:</strong> improved system stability with ~40% fewer incidents</span></div>
               </div>
             </div>
-            <div class="about-card fade-up delay-1">
+            <div class="about-card fade-up delay-2">
               <h3 class="card-title"><i class="fa fa-rocket"></i>Core Focus Areas</h3>
               <p class="subtle">A concise view of the platforms, delivery systems, and operational practices I build and improve.</p>
               <div class="focus-grid">
